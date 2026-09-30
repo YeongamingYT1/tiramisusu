@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Tiramisusu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#fcfaf8] text-gray-800">
+
+    <!-- Navbar -->
+<nav class="bg-white/90 backdrop-blur-md shadow-sm py-5 px-8 flex justify-between items-center fixed w-full z-50">
+    <a href="index.html" class="text-2xl font-bold text-[#4a3f35] tracking-widest">TIRAMISUSU</a>
+    <div class="space-x-6 hidden md:flex items-center">
+        <a href="index.html" class="text-gray-600 hover:text-[#4a3f35] font-semibold">Beranda</a>
+        <a href="menu.html" class="text-[#4a3f35] font-bold border-b-2 border-[#4a3f35]">Menu Utama</a>
+        <a href="tentang.html" class="text-gray-600 hover:text-[#4a3f35] font-semibold">Tentang Kami</a>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<section class="pt-32 pb-12 px-4 max-w-7xl mx-auto text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-[#4a3f35]" data-aos="fade-down">Menu & Harga Resmi</h1>
+    <p class="text-gray-500 max-w-2xl mx-auto text-lg" data-aos="fade-up">
+        Pilih varian favoritmu dari koleksi #oleholehsombong. Klik pada produk untuk melihat detail dan melakukan pemesanan.
+    </p>
+</section>
+
+<!-- Menu Grid -->
+<section class="pb-20 px-4 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        
+        <!-- 1. Tiramisusu Original -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <div class="relative">
+                    <img src="Tiramisusu Original.jpg" alt="Tiramisusu Original" class="w-full h-56 object-cover bg-gray-100">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Best Seller</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Tiramisusu Original</h3>
+                    <p class="text-xs text-gray-500 mb-3">Layer dessert dengan cream susu lumer khas Bandung.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 88.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=tiramisusu-original" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 2. Tiramisusu Original Regular Size -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <div class="relative">
+                    <img src="Tiramisusu Original Regular Size.jpg" alt="Tiramisusu Original Regular Size" class="w-full h-56 object-cover bg-gray-100">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Favorit</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Tiramisusu Original (Reg)</h3>
+                    <p class="text-xs text-gray-500 mb-3">Ukuran standar pas untuk nikmati bersama keluarga.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 85.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=tiramisusu-reg" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 3. Tiramisusu Chocolate Original -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Tiramisusu Chocolate Original.jpg" alt="Tiramisusu Chocolate Original" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Tiramisusu Chocolate Original</h3>
+                    <p class="text-xs text-gray-500 mb-3">Sentuhan cokelat Chocomory yang intens & melimpah.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 88.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=tiramisusu-choco" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 4. Tiramisusu Cookies and Cream -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Tiramisusu Cookies and Cream.jpg" alt="Tiramisusu Cookies and Cream" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Tiramisusu Cookies & Cream</h3>
+                    <p class="text-xs text-gray-500 mb-3">Perpaduan renyah biskuit oreo dan cream lembut.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 88.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=tiramisusu-cnc" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 5. Tiramisu Cake -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Tiramisu Cake.jpg" alt="Tiramisu Cake" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Tiramisu Cake</h3>
+                    <p class="text-xs text-gray-500 mb-3">Kue tiramisu klasik bertekstur ultra lembut.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 95.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=tiramisu-cake" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 6. Choco Bag -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <div class="relative">
+                    <img src="Choco Bag.jpg" alt="Choco Bag" class="w-full h-56 object-cover bg-gray-100">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Hot Seller</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Choco Bag</h3>
+                    <p class="text-xs text-gray-500 mb-3">Isian cokelat beragam dalam tas tote bag eksklusif.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 115.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=choco-bag" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 7. Moo Moo Roll -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <div class="relative">
+                    <img src="Moo Moo Roll.jpg" alt="Moo Moo Roll" class="w-full h-56 object-cover bg-gray-100">
+                    <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Populer</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Moo Moo Roll</h3>
+                    <p class="text-xs text-gray-500 mb-3">Bolu gulung motif sapi melimpah cream susu.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 78.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=moo-moo-roll" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 8. Pie Chocolate Chocomory -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Pie Chocolate Chocomory.jpg" alt="Pie Chocolate Chocomory" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Pie Chocolate Chocomory</h3>
+                    <p class="text-xs text-gray-500 mb-3">Pie renyah dengan isian cokelat lumer.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 45.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=pie-chocolate" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 9. Pie Cookies and Cream -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="PIE Cookies and Cream.jpg" alt="Pie Cookies and Cream" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Pie Cookies & Cream</h3>
+                    <p class="text-xs text-gray-500 mb-3">Pie renyah bertabur cookies & cream lezat.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 45.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=pie-cnc" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 10. Strawberry Milk Pie -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Strawberry Milk Pie.jpg" alt="Strawberry Milk Pie" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Strawberry Milk Pie</h3>
+                    <p class="text-xs text-gray-500 mb-3">Susu dan stroberi segar terpadu dalam crust pie renyah.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 45.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=strawberry-milk-pie" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 11. Cookies & Cream -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Cookies & Cream.jpg" alt="Cookies & Cream" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Cookies & Cream Snack</h3>
+                    <p class="text-xs text-gray-500 mb-3">Cemilan kuki manis gurih teman santai.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 35.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=cookies-cream-snack" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 12. Crispy Almond Cookies -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Crispy Almond Cookies.jpg" alt="Crispy Almond Cookies" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Crispy Almond Cookies</h3>
+                    <p class="text-xs text-gray-500 mb-3">Kuki tipis krispi bertabur almond melimpah.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 42.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=crispy-almond" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 13. Crispy Brownie -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Crispy Brownie.jpg" alt="Crispy Brownie" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Crispy Brownie</h3>
+                    <p class="text-xs text-gray-500 mb-3">Keripik brownie renyah kaya rasa cokelat asli.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 38.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=crispy-brownie" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 14. Crispy Cookies -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Crispy Cookies.jpg" alt="Crispy Cookies" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Crispy Cookies</h3>
+                    <p class="text-xs text-gray-500 mb-3">Kuki renyah dengan rasa manis pahit yang pas.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 38.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=crispy-cookies" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 15. Cheese Puff Ball -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Cheese Puff Ball.jpg" alt="Cheese Puff Ball" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Cheese Puff Ball</h3>
+                    <p class="text-xs text-gray-500 mb-3">Bola renyah rasa keju melimpah dan gurih.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 35.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=cheese-puff" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 16. Hot Choco Buttons -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Hot Choco Buttons.jpg" alt="Hot Choco Buttons" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Hot Choco Buttons</h3>
+                    <p class="text-xs text-gray-500 mb-3">Koin cokelat premium siap seduh atau dicemil langsung.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 40.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=hot-choco-buttons" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- 17. Yoghurt -->
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col justify-between" data-aos="fade-up">
+            <div>
+                <img src="Yoghurt.jpg" alt="Yoghurt" class="w-full h-56 object-cover bg-gray-100">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-[#4a3f35] mb-1">Yoghurt Segar</h3>
+                    <p class="text-xs text-gray-500 mb-3">Minuman yoghurt dingin menyegarkan khas Chocomory.</p>
+                    <p class="text-xl font-extrabold text-[#4a3f35]">Rp 22.000</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="produk.html?id=yoghurt" class="block w-full text-center bg-[#4a3f35] hover:bg-[#635347] text-white font-semibold py-2.5 rounded-xl transition">Pesan Sekarang</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#4a3f35] text-white py-10 text-center">
+    <p class="text-lg font-bold mb-2">Tiramisusu by Chocomory</p>
+    <p class="text-sm text-gray-300">&copy; 2026 Tiramisusu Bandung. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 50 });
+</script>
+</body>
+</html>

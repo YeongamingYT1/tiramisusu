@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisusu by Chocomory - Oleh-Oleh Sombong Bandung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fcfaf8; color: #4a3f35; }
+        .bg-choco { background-color: #4a3f35; }
+        .text-choco { color: #4a3f35; }
+        .bg-choco-light { background-color: #8c7a6b; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="text-2xl font-bold text-choco tracking-widest">TIRAMISUSU</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-choco hover:text-yellow-600 font-semibold">Beranda</a>
+                    <a href="menu.html" class="text-choco hover:text-yellow-600 font-semibold">Menu Utama</a>
+                    <a href="tentang.html" class="text-choco hover:text-yellow-600 font-semibold">Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-choco">HANYA ADA DI BANDUNG.</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 italic">#oleholehsombong yang paling dinanti.</p>
+            <img src="https://images.unsplash.com/photo-1571115177098-24edf44773c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Tiramisusu" class="rounded-2xl shadow-2xl mx-auto mb-10 object-cover h-96 w-full">
+            <a href="menu.html" class="bg-choco text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-choco-light transition duration-300 shadow-lg">Lihat Menu Kami</a>
+        </div>
+    </section>
+
+    <!-- Interactive Branch Selector (EUD) -->
+    <section class="py-16 bg-white" id="cabang">
+        <div class="max-w-6xl mx-auto px-4" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center mb-10 text-choco">Pilih Cabang Terdekat Anda</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <label for="branchSelect" class="block text-sm font-medium text-gray-700 mb-2">Pilih Lokasi Tiramisusu:</label>
+                    <select id="branchSelect" class="block w-full p-4 border border-gray-300 rounded-lg focus:ring-choco focus:border-choco bg-gray-50 text-lg">
+                        <option value="cihapit">Jl. Anggrek, Cihapit</option>
+                        <option value="setiabudi">Jl. Setiabudi, Gegerkalong</option>
+                        <option value="lembang">Jl. Raya Lembang</option>
+                        <option value="buahbatu">Jl. Buah Batu</option>
+                        <option value="braga">Jl. Braga</option>
+                        <option value="paskal">Paskal Hyper Square</option>
+                    </select>
+                </div>
+                
+                <div id="branchInfo" class="bg-orange-50 p-8 rounded-xl shadow-inner border border-orange-100">
+                    <h3 id="b-name" class="text-2xl font-bold mb-2">Tiramisusu Cihapit</h3>
+                    <p id="b-address" class="text-gray-600 mb-4 flex items-center">
+                        📍 Jl. Anggrek No.48, Cihapit, Kec. Bandung Wetan, Kota Bandung, 40114
+                    </p>
+                    <p class="text-gray-600 mb-6">🕒 Buka · Tutup pukul 21.00</p>
+                    <div class="flex space-x-4">
+                        <a id="b-map" href="#" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Rute Maps</a>
+                        <a id="b-gofood" href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600">Pesan GoFood</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updateable Info / Artikel -->
+    <section class="py-16 bg-[#fcfaf8]" id="berita">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-choco" data-aos="fade-up">Informasi & Update Terbaru</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Artikel 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Promo" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-1">Update Operasional</p>
+                        <h3 class="text-xl font-bold mb-2">Jam Buka Selama Libur Panjang</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pastikan Anda datang lebih awal selama weekend untuk menghindari antrian panjang di cabang Cihapit...</p>
+                        <a href="#" class="text-choco font-bold hover:underline">Baca selengkapnya &rarr;</a>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Produk Baru" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-1">Rilis Produk</p>
+                        <h3 class="text-xl font-bold mb-2">Choco Bag Kini Restock!</h3>
+                        <p class="text-gray-600 text-sm mb-4">Setelah sold out selama 2 minggu, Choco Bag paling populer kini kembali tersedia di seluruh cabang...</p>
+                        <a href="#" class="text-choco font-bold hover:underline">Baca selengkapnya &rarr;</a>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1587212006395-5fa8a36a2de6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Tips" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-1">Tips Tiramisusu</p>
+                        <h3 class="text-xl font-bold mb-2">Cara Terbaik Menikmati Tiramisusu</h3>
+                        <p class="text-gray-600 text-sm mb-4">Simpan di lemari pendingin minimal 2 jam sebelum disantap untuk sensasi lumer yang sempurna...</p>
+                        <a href="#" class="text-choco font-bold hover:underline">Baca selengkapnya &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-choco text-white py-10 text-center">
+        <p class="text-lg font-bold mb-2">Tiramisusu by Chocomory</p>
+        <p class="text-sm text-gray-300 mb-4">Call/WA: 0811-2007-9004 | Instagram: @tiramisusubandung</p>
+        <p class="text-xs text-gray-400">&copy; 2026 Tiramisusu Bandung. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+
+        // Logic EUD Branch Selector
+        const branchData = {
+            cihapit: { name: "Tiramisusu Cihapit", address: "📍 Jl. Anggrek No.48, Cihapit, Kec. Bandung Wetan, Kota Bandung, 40114" },
+            setiabudi: { name: "Tiramisusu Setiabudi", address: "📍 Jl. Setiabudi, Gegerkalong, Kota Bandung" },
+            lembang: { name: "Tiramisusu Lembang", address: "📍 Jl. Raya Lembang, Gudangkahuripan, Lembang" },
+            buahbatu: { name: "Tiramisusu Buah Batu", address: "📍 Jl. Buah Batu, Kujangsari, Kota Bandung" },
+            braga: { name: "Tiramisusu Braga", address: "📍 Jl. Braga, Sumur Bandung, Kota Bandung" },
+            paskal: { name: "Tiramisusu Paskal", address: "📍 Paskal Hyper Square, Jl. Pasir Kaliki No.25-27, Kota Bandung" }
+        };
+
+        const branchSelect = document.getElementById('branchSelect');
+        const bName = document.getElementById('b-name');
+        const bAddress = document.getElementById('b-address');
+        const bInfo = document.getElementById('branchInfo');
+
+        branchSelect.addEventListener('change', (e) => {
+            const data = branchData[e.target.value];
+            // Simple animation effect when changing
+            bInfo.style.opacity = 0;
+            setTimeout(() => {
+                bName.innerText = data.name;
+                bAddress.innerText = data.address;
+                bInfo.style.opacity = 1;
+                bInfo.style.transition = "opacity 0.5s ease";
+            }, 200);
+        });
+    </script>
+</body>
+</html>
